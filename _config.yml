@@ -1,51 +1,23 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 1. 사이트 기본 설정
 title: "조영휘(CHO YOUNG HWI)"
-email:
-description: "데이터분석가"
-twitter_username: username
-github_username: username
+name: "조영휘"
+description: "데이터 분석 포트폴리오 (Python, Machine Learning, Insight)"
+url: "https://본인깃허브아이디.github.io" # ★ 중요: 본인 깃허브 주소 입력 (예: https://gildong.github.io)
+baseurl: "" # 빈칸 유지
+
+# 2. 테마 설정 (건드리지 마세요)
 minimal_mistakes_skin: default
 search: true
-
-# Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
+
+# 3. 페이징 및 시간 설정
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Seoul" # ★ 중요: 한국 시간 설정
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# 4. 플러그인 (건드리지 마세요)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -54,38 +26,29 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# 5. 작성자 프로필 (왼쪽 사이드바에 뜸)
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name    : "조영휘"
+  avatar  : "/assets/images/profile.jpg" # 나중에 본인 사진 파일명을 profile.jpg로 해서 올리세요
+  bio     : "데이터로 세상을 읽는 분석가입니다.<br>Sentinel, FBTI 프로젝트 진행 중."
+  location: "South Korea"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://halfmind.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/본인깃허브아이디" # ★ 본인 깃허브 프로필 주소
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:본인이메일주소@gmail.com" # 이메일 주소 입력 (선택사항)
 
+# 6. 하단 푸터 (바닥글)
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/본인깃허브아이디"
 
+# 7. 기본 레이아웃 설정
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -96,17 +59,9 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
