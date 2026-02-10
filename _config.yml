@@ -31,7 +31,6 @@ plugins:
   - jekyll-include-cache
 
 # 5. 작성자 프로필 (왼쪽 사이드바에 뜸)
-
 author:
   name   : "조영휘"
   avatar : "/assets/images/profile.jpg"  <-- ★ 여기! (파일 확장자가 png라면 .png로)
