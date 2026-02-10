@@ -1,6 +1,6 @@
 ---
 title: "테스트 게시물"
-date: 2026-02-10
+date: 2023-02-10
 categories:
   - Data Analysis
 tags:
