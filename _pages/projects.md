@@ -1,9 +1,8 @@
 ---
 title: "프로젝트 (Projects)"
 permalink: /projects/
-layout: categories
+layout: home
 author_profile: true
-taxonomy: Data Analysis  # 카테고리 이름이 'Data Analysis'인 글만 모아 보여줌
 ---
 
 ## 💻 Projects Archive
